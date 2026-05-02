@@ -1,0 +1,63 @@
+.footer {
+  width: 100%;
+  padding: 2rem 0; /* Vertical breathing room */
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1450px; /* Matches your broad Navbar and Hero width */
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.footer-links, .footer-top button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a, .footer-top button {
+  color: #ffffff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.footer-links a:hover, .footer-top button:hover {
+  opacity: 1;
+}
+
+.footer-credits {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: #ffffff; /* Muted gray to match your Hero subtitle */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .footer-links {
+    justify-content: center;
+  }
+}

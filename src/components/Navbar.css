@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 100%;
+  max-width: 1450px; 
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  height: 170px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.navbar-links-right {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .navbar {
+    width: 95%; /* Gives a little gutter on the sides of phones */
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1.5rem 5%;
+    width: 100%;
+    left: 0;
+    transform: none; /* Reset the centering transform for mobile */
+  }
+
+  .navbar-logo-img {
+    height: 30px; /* Smaller logo */
+  }
+
+  .navbar-links-right {
+    gap: 0.5rem;
+  }
+
+  .nav-btn-outline {
+    font-size: 11px; /* Smaller text */
+    padding: 6px 14px; /* Slimmer buttons */
+  }
+}
+
+.nav-btn-outline {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'DM Sans', var(--sans);
+  font-size: 15px; 
+  font-weight: 500;
+  padding: 12px 32px; 
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate; 
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.nav-btn-outline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ffffff; 
+  z-index: -1; 
+  transition: width 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.nav-btn-outline:hover {
+  color: #1a1a23;
+  border-color: #ffffff;
+  transform: translateY(-2px); 
+}
+
+.nav-btn-outline:hover::before {
+  width: 100%;
+}
+
+.contact-btn {
+  background-color: transparent;
+  color: #e2e8f0;
+  font-family: 'DM Sans', var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; 
+  isolation: isolate;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%; 
+  height: 100%;
+  background-color: #f3f4f6;
+  z-index: -1; 
+  transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+.contact-btn:hover {
+  color: #1a1a23;
+  border-color: #f3f4f6;
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1); 
+}
+
+
+.contact-btn:hover::before {
+  width: 100%;
+}

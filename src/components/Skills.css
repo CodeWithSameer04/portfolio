@@ -1,0 +1,98 @@
+.skills-section {
+  padding: 10rem 0; /* Generous padding to separate it from other sections */
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.skills-container {
+  width: 100%;
+  max-width: 1450px;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns both sides to the top */
+  gap: 6rem;
+}
+
+/* --- Left Side: Massive Heading --- */
+.skills-left {
+  flex: 0.8; /* Keeps the heading column relatively narrow */
+}
+
+.skills-left h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+/* --- Right Side: Content Area --- */
+.skills-right {
+  flex: 2; /* Gives the text plenty of room to breathe */
+}
+
+/* The Intro Paragraph */
+.skills-intro {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #cccccc; /* Slightly muted gray */
+  margin: 0 0 5rem 0; /* Big gap before the grid starts */
+  max-width: 900px;
+}
+
+.skills-intro strong {
+  color: #ffffff; /* Bright white for emphasis */
+  font-weight: 600;
+}
+
+/* The Grid Layout for Skills */
+.skills-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns like the image */
+  row-gap: 3.5rem;
+  column-gap: 4rem;
+}
+
+/* Individual Item Text Styling */
+.skill-item h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  font-weight: 400; /* Keeps it elegant, not too heavy */
+}
+
+.skill-item p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: #8c8c8c; /* Darker gray to act like the "dates" in your reference */
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 1024px) {
+  .skills-container {
+    flex-direction: column; /* Stack top to bottom on tablets */
+    gap: 3rem;
+  }
+
+  .skills-left h2 {
+    font-size: 2.8rem;
+  }
+
+  .skills-intro {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-list-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile phones */
+    row-gap: 2.5rem;
+  }
+}

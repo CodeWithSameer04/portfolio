@@ -1,0 +1,145 @@
+/* --- Main Layout Container --- */
+.hero-container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 12rem 5% 10rem;
+  max-width: 1300px; 
+  margin: 0 auto;
+  gap: 4rem;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  flex: 1.2; 
+  text-align: left;
+}
+
+.hero-left h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 5.3rem; 
+  white-space: nowrap;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: -3px;
+  margin: 0 0 1rem 0;
+  line-height: 1.05;
+}
+
+.hero-left h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 3.2rem;
+  color: #8c8c8c;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.hero-divider {
+  width: 1px;
+  height: 350px; 
+  background-color: rgba(255, 255, 255, 0.15); 
+}
+
+
+.hero-right {
+  flex: 1.2; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%; 
+}
+
+.hero-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); 
+}
+
+.hero-right p {
+  font-family: 'DM Sans', sans-serif;
+  color: #d1d5db; 
+  font-size: 1.25rem; 
+  line-height: 1.3; 
+  font-weight: 400;
+  margin: 0;
+  white-space: normal;
+  width: 100%; 
+  max-width: 550px; 
+
+  letter-spacing: -0.2px;
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10rem;
+    gap: 3rem;
+  }
+
+  .hero-divider {
+    width: 100%;
+    height: 1px; 
+  }
+
+  .hero-left h1 {
+    font-size: 3.8rem;
+  }
+  
+  .hero-left h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Stack left and right vertically */
+    padding: 7rem 6% 4rem; /* Less top padding */
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 3.2rem; /* Much smaller but still bold */
+    white-space: normal; /* Allow the name to wrap to a second line */
+    letter-spacing: -2px;
+    line-height: 1.1;
+  }
+
+  .hero-left h2 {
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+    max-width: 100%;
+  }
+
+  /* Hide the vertical line on mobile */
+  .hero-divider {
+    display: none;
+  }
+
+  .hero-right {
+    width: 100%;
+    align-items: flex-start; /* Keep bio aligned with the name */
+    gap: 1.5rem;
+  }
+
+  .hero-avatar {
+    width: 80px; /* Smaller photo */
+    height: 80px;
+  }
+
+  .hero-right p {
+    font-size: 1rem;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+}
