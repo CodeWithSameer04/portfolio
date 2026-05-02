@@ -47,7 +47,7 @@
   }
 
   .navbar-logo-img {
-    height: 30px; /* Smaller logo */
+    height: 65px !important;
   }
 
   .navbar-links-right {
