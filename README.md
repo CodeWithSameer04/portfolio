@@ -1,22 +1,55 @@
-<<<<<<< HEAD
-# portfolio
-=======
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive developer portfolio showcasing my projects, skills, and work.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+🔗 https://portfolio-nu-two-sx772f63el.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## ✨ Features
+- Responsive and clean UI design
+- Smooth navigation and modern layout
+- Project showcase with descriptions
+- Beginner-friendly and scalable structure
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- Frontend: HTML, CSS, JavaScript / React
+- Build Tool: Vite
+- Deployment: Vercel
+- Version Control: Git & GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 670365e (Initial commit)
+---
+
+## 📂 Featured Projects
+
+### 🔹 ScholarsIQ  
+AI-powered academic insights from raw CSV data.
+
+### 🔹 Auto File Organizer  
+Smart file organization with zero manual effort.
+
+### 🔹 Task Manager  
+Effortless task tracking for streamlined productivity.
+
+---
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/CodeWithSameer04/portfolio.git
+cd portfolio
+npm install
+npm run dev
+
+```
+📬 **Contact**  
+[GitHub](https://github.com/CodeWithSameer04) | [LinkedIn](https://www.linkedin.com/in/sameer-raj-991792188/) | sameerraj9922@gmail.com
+
+⭐ Support
+
+If you like this project, give it a star ⭐
